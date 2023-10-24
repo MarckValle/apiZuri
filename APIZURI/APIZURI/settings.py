@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'paypal.standard.ipn'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    'database2': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cuestionario',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost', # o la dirección de tu servidor de base de datos
+        'PORT': '5432', # el puerto por defecto para PostgreSQL
+}
 }
 
 
@@ -132,6 +141,5 @@ EMAIL_PORT = 587 # puerto para smtp
 EMAIL_USE_TLS = True #cifrado tls
 EMAIL_HOST_USER = 'marco.vallejo2000@gmail.com' #correo 
 EMAIL_HOST_PASSWORD = 'guphsxdeilkvdtex' #contraseña de gmail
-
 # Opcional: Configuración para el nombre del remitente predeterminado
 DEFAULT_FROM_EMAIL = 'marco.vallejo2000@gmail.com'

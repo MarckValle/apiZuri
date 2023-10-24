@@ -19,6 +19,7 @@ from api.views import Home
 from api.views import inicio
 from api.views import Catalogo
 from api.views import Nosotros
+from api.views import Carrito
 from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +29,6 @@ urlpatterns = [
     path('', inicio.as_view(), name='index'),
     path('Menu/', Catalogo.as_view(), name='menu'),
     path('Acerca De/', Nosotros.as_view(), name='about'),
+    path('CarritoCompras', Carrito.as_view(), name='carrito')
     
 ]

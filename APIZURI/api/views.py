@@ -10,6 +10,10 @@ class Home(APIView):
     template_name="SIGN UP & SIGN IN PAGE.html"
     def get(self, request):
         return render(request, self.template_name)
+class Carrito(APIView):
+    template_name="book.html"
+    def get(self, request):
+        return render(request, self.template_name)
     
 class inicio(APIView):
     template_nam="index.html"

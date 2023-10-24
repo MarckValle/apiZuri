@@ -191,7 +191,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav {
   padding-left: 18%;
-  background-color: #02020259;
+  background-color: #02020200;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -520,6 +520,32 @@ a:focus {
   margin: 45px 0 20px 0;
 }
 
+.gr_filtro .filters_gr {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin-top: -10px 0 -15px 0;
+}
+
+.gr_filtro .filters_gr li {
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.gr_filtro .filters_gr li.active {
+  background-color: #c54a4a;
+  color: #ffffff;
+}
+
+
 .food_section .filters_menu li {
   padding: 7px 25px;
   cursor: pointer;
@@ -709,8 +735,14 @@ a:focus {
   position: relative;
 }
 
+.book_section .carrito_cont {
+  margin-bottom: 25px;
+  width: 100vh;
+  height: 100vh;
+}
 .book_section .heading_container {
   margin-bottom: 25px;
+
 }
 
 .book_section .form_container .form-control {
@@ -822,8 +854,8 @@ a:focus {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: #ffbe33;
   -webkit-transform: rotate(45deg) translateX(-50%);
           transform: rotate(45deg) translateX(-50%);
@@ -1058,6 +1090,7 @@ a:focus {
     border: none;
     margin-top: 10px;
 }
+
 
 
 /*# sourceMappingURL=style.css.map */

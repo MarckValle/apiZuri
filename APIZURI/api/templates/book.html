@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 
@@ -11,127 +12,118 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <link rel="shortcut icon" href="{% static 'images/s1.png' %}" type="png">
 
-  <title> Feane </title>
+  <title> Mamá Macha </title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- nice select  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../static/css/carrito.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+  <!--BUTTONS PAYPAL-->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AcSvt8ORvhMoD2E2XNUo33-L5BZGj8W5csa7TEZ_x1kSz5E-e_9XMrb3oWYNx7QeN03Sx6LV_8fRjSMp&components=YOUR_COMPONENTS">
+    </script>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AcSvt8ORvhMoD2E2XNUo33-L5BZGj8W5csa7TEZ_x1kSz5E-e_9XMrb3oWYNx7QeN03Sx6LV_8fRjSMp"></script>
 </head>
 
 <body class="sub_page">
-
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AcSvt8ORvhMoD2E2XNUo33-L5BZGj8W5csa7TEZ_x1kSz5E-e_9XMrb3oWYNx7QeN03Sx6LV_8fRjSMp"
+    async>
+    </script>
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/hero-bg.jpg" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
+
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Feane
+              Mamá Macha
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+              <li class="nav-item ">
+                <a class="nav-link" href="{% url 'index'%}">Principal </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="{% url 'menu'%}">Menu</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="book.html">Book Table <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="{% url 'about'%}">Nosotros <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             <div class="user_option">
               <a href="" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
-              <a class="cart_link" href="#">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-              </a>
+              <!--carrito de compras-->
+
+
+              <div class="container-icon">
+                <div class="container-cart-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                  <div class="cart-product">
+                    <div class="info-cart-product">
+                      <span class="cantidad-producto-carrito">1</span>
+                      <p class="titulo-producto-carrito">Zapatos Nike</p>
+                      <span class="precio-producto-carrito">$80</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="icon-close">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </div>
+                  <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                  </div>
+                </div>
+              </div>
+              <!-- se cierra el carrito--->
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="" class="order_online">
-                Order Online
+              <a href="{% url 'login'%}" class="order_online">
+                Registrate / Inicia Sesión
               </a>
             </div>
           </div>
@@ -144,62 +136,84 @@
   <!-- book section -->
   <section class="book_section layout_padding">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Book A Table
+      <div class="carrito_cont">
+        <h2 style="align-self:  center;">
+          Carrito De Compras
         </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div>
-                <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="">
-                    2
-                  </option>
-                  <option value="">
-                    3
-                  </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
-                  </option>
-                </select>
-              </div>
-              <div>
-                <input type="date" class="form-control">
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+          <div class="header-carrito">
+            <h2>Tu Carrito</h2>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
+          <div class="carrito-items">
+            <div class="carrito-item">
+              <img src="img/boxengasse.png" width="80px" alt="">
+              <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Box Engasse</span>
+                <div class="selector-cantidad">
+                  <i class="fa-solid fa-minus restar-cantidad"></i>
+                  <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                  <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">$15.000,00</span>
+              </div>
+              <span class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+              </span>
+            </div>
+            <div class="carrito-item">
+              <img src="img/skinglam.png" width="80px" alt="">
+              <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Skin Glam</span>
+                <div class="selector-cantidad">
+                  <i class="fa-solid fa-minus restar-cantidad"></i>
+                  <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                  <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">$18.000,00</span>
+              </div>
+              <button class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+
           </div>
+
+
+
+          <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
         </div>
       </div>
     </div>
   </section>
+
+
+  <script>
+    paypal.Buttons().render('#paypal-button-container')
+  </script>
+  <div id="paypal-button-container"></div>
+
+  <script>
+    document.querySelector('#myRadioField')
+      .addEventListener('click', function () {
+        paypal.Buttons().render('#paypal-button-container')
+      });
+  </script>
+  <div id="paypal-button-container"></div>
+
+  <script>
+    document.querySelector('#paypal-button-container')
+      .style.display = 'none';
+
+    paypal.Buttons().render('#paypal-button-container');
+
+    document.querySelector('#myRadioField')
+      .addEventListener('click', function () {
+        document.querySelector('#paypal-button-container')
+          .style.display = 'block';
+      });
+  </script>
   <!-- end book section -->
 
   <!-- footer section -->
@@ -209,25 +223,26 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Contactanos
             </h4>
             <div class="contact_link_box">
-              <a href="">
+              <a href="geo: 19.535282209109422, -99.02912654980506?=Ecatepec">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Ubicación
                 </span>
               </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="https://wa.me/5513354677" target="_blank">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  WhatsApp
                 </span>
               </a>
-              <a href="">
+              <a href="mailto: marco.vallejo2000@gmail.com?subject=¡Nuevas Delicias en Mamá Macha! Descubre nuestros últimos sabores!&body=Haznos saber tú opinion"
+                target="_blank">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  mama_macha@gmail.com
                 </span>
               </a>
             </div>
@@ -236,13 +251,13 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Mamá Macha
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Bienvenido a Salsas Mamá Macha, un emprendimiento familiar dedicado a la creación de salsas artesanales.
             </p>
             <div class="footer_social">
-              <a href="">
+              <a href="https://www.facebook.com/SalsasMamaMacha" target="_blank">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
               <a href="">
@@ -262,22 +277,22 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Horario de Atención
           </h4>
           <p>
-            Everyday
+            Todos los días
           </p>
           <p>
-            10.00 Am -10.00 Pm
+            10.00 Am -08.00 Pm
           </p>
         </div>
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          &copy; <span id="displayYear"></span>
+          <a href="">Mamá Macha</a><br><br>
+          &copy; <span id="">Acondicionado por MValle</span>
+          <a href="" target="_blank"></a>
         </p>
       </div>
     </div>
@@ -285,12 +300,14 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  <script src="{% static 'js/bootstrap.js'%}"></script>
+  <script src="{% static 'js/carrito.js'%}"></script>
   <!-- owl slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
@@ -299,7 +316,7 @@
   <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="{% static '../static/js/custom.js'%}"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
